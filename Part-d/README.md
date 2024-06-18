@@ -73,10 +73,10 @@ The goal of this project is to develop a fleet of autonomous UAVs (drones) capab
 import time
 
 class Drone:
-    def __init__(self, id, start_position, search_area):
+    def __init__(self, id, start_position, search_area_bounds):
         self.id = id
         self.position = start_position
-        self.search_area = search_area
+        self.search_area_bounds = search_area_bounds
         self.lidar_sensor = LidarSensor()
         self.color_sensor = ColorSensor()
         self.communication_module = SwarmCommunication()
@@ -95,8 +95,8 @@ class Drone:
         self.position = position
         # Code to move to a specified position
 
-    def search_area(self):
-        print(f"Drone {self.id} starting search in area {self.search_area}")
+    def perform_search(self):
+        print(f"Drone {self.id} starting search in area {self.search_area_bounds}")
         while not self.target_found:
             obj = self.lidar_sensor.detect_object()
             if obj and obj.height == 15 and obj.width == 15 and obj.length == 15:
@@ -145,9 +145,9 @@ class Object:
 
 # Initialize drones
 drones = [
-    Drone(id=1, start_position=(0, 0), search_area=(0, 10)),
-    Drone(id=2, start_position=(10, 0), search_area=(10, 20)),
-    Drone(id=3, start_position=(20, 0), search_area=(20, 30))
+    Drone(id=1, start_position=(0, 0), search_area_bounds=(0, 10)),
+    Drone(id=2, start_position=(10, 0), search_area_bounds=(10, 20)),
+    Drone(id=3, start_position=(20, 0), search_area_bounds=(20, 30))
 ]
 
 # Start the search
@@ -156,7 +156,7 @@ for drone in drones:
 
 # Main search logic
 for drone in drones:
-    drone.search_area()
+    drone.perform_search()
 
 # Landing all drones once the target is found
 for drone in drones:
