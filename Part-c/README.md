@@ -1,5 +1,5 @@
 Designing a drone involves optimizing several factors to enhance performance, functionality, and reliability. Here are some proposed changes to the design of a regular drone, along with justifications and references:
----
+
 ### Enhanced Battery Life and Power Management
 
 **a. Higher Energy-Density Batteries**:
