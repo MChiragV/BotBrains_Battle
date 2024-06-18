@@ -74,4 +74,4 @@ Swarm drones can inspect large and complex infrastructures such as bridges, powe
 
 **Object Recognition:** Advanced image recognition algorithms, powered by machine learning, will be integrated into the drones' onboard systems. These algorithms enable the drones to identify targets based on specific visual cues, such as uniform patterns or movements, amidst a clutter of different objects spread randomly over the grassy land.
 
-By implementing this system, your project aims to create a robust and efficient solution for locating and identifying targets autonomously, leveraging the strengths of swarm drone technology. This approach can significantly enhance the capabilities of military and surveillance operations, improving response times and reducing risks to human personnel.
+By implementing this system, your project aims to create a robust and efficient solution for locating and identifying targets autonomously, leveraging the strengths of swarm drone technology. This approach can enhance military and surveillance operation capabilities, improving response times and reducing risks to human personnel.
