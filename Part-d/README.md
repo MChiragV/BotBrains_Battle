@@ -67,7 +67,7 @@ The goal of this project is to develop a fleet of autonomous UAVs (drones) capab
    - The drone that finds the target lands at a predefined location.
    - Other drones land once they receive the target information.
 
-### Code (Python-like Pseudocode)
+### Code Python
 
 ```python
 import time
